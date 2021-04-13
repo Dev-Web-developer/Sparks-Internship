@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Facebook Login JavaScript Example</title>
+		<meta charset="UTF-8" />
+		<meta
+			name="google-signin-client_id"
+			content="401353348906-v249cuduuj0vkj0bohht8ghn3mc50eut.apps.googleusercontent.com"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+	</head>
+	<script src="init.js"></script>
+
+	<body>
+		<div class="section">
+			<div class="login--btns">
+				<div class="Google-btn">
+					<div id="login1" class="g-signin2" data-onsuccess="onSignIn"></div>
+				</div>
+
+				<div class="facebook-btn">
+					<button id="login" class="loginBtn loginBtn--facebook inputbutton">
+						Facebook
+					</button>
+				</div>
+			</div>
+			<div class="container">
+				<div class="g-container">
+					<div class="Gname"></div>
+					<div class="Gemail"></div>
+					<div class="Gimage"></div>
+					<div>
+						<button
+							id="logout1"
+							style="display: none"
+							class="signout"
+							onclick="signOut();"
+						>
+							Sign out
+						</button>
+					</div>
+				</div>
+
+				<div class="f-container">
+					<div class="Fname"></div>
+					<div class="Femail"></div>
+					<div class="Fimage"></div>
+					<div>
+						<button id="logout" style="display: none" class="inputbutton">
+							Logout
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+</html>
